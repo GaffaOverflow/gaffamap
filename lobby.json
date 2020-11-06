@@ -208,7 +208,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/haxko.space\/light-painting-making-of.jpg"
+                 "value":"https:\/\/raw.githubusercontent.com\/TimKlausmeyer\/gaffamap\/main\/map_lobby.png"
                 }],
          "type":"tilelayer",
          "visible":true,
