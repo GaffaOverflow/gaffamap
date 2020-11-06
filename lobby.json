@@ -208,7 +208,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"map_lobby.png"
+                 "value":"https:\/\/haxko.space\/light-painting-making-of.jpg"
                 }],
          "type":"tilelayer",
          "visible":true,
