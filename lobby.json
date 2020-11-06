@@ -208,7 +208,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":""
+                 "value":"https:\/\/raw.githubusercontent.com\/TimKlausmeyer\/gaffamap\/main\/map_lobby.png"
                 }],
          "type":"tilelayer",
          "visible":true,
