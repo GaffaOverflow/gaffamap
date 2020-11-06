@@ -110,6 +110,12 @@
          "id":7,
          "name":"muensterlink",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/www.blick.ms\/webcam-auf-dem-prinzipalmarkt-muenster.php"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":50,
