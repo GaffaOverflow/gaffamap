@@ -3,7 +3,7 @@
 # More info at https://github.com/nvuillam/mega-linter#readme
 name: Mega-Linter
 
-on: workflow_dispath
+on: workflow_dispatch
 
 # env: #Uncomment to activate variables below
   # Apply linter fixes configuration
