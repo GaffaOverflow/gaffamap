@@ -8,7 +8,7 @@ This is the gaffamap for the rc3 event 2020. Über den folgenden Link kann die K
 
 [Ausprobieren](https://play.wa-test.rc3.cccv.de/_/global/raw.githubusercontent.com/TimKlausmeyer/gaffamap/main/lobby.json)
 
-```
+```bash
 # Replace <branch> with the branch you want to test
 https://play.wa-test.rc3.cccv.de/_/global/raw.githubusercontent.com/TimKlausmeyer/gaffamap/<branch>/lobby.json
 ```
