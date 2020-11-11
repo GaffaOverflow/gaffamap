@@ -138,7 +138,7 @@
         {
          "columns":16,
          "firstgid":1,
-         "image":"floor.png",
+         "image":"../src/tiles/floor.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -151,7 +151,7 @@
         {
          "columns":9,
          "firstgid":257,
-         "image":"haxko.png",
+         "image":"../src/logos/haxko.png",
          "imageheight":158,
          "imagewidth":315,
          "margin":0,
@@ -164,7 +164,7 @@
         {
          "columns":40,
          "firstgid":293,
-         "image":"gaffa.png",
+         "image":"../src/logos/gaffa.png",
          "imageheight":642,
          "imagewidth":1280,
          "margin":0,
@@ -177,7 +177,7 @@
         {
          "columns":16,
          "firstgid":1093,
-         "image":"furniture.png",
+         "image":"../src/tiles/furniture.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
