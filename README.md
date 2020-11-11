@@ -4,10 +4,10 @@
 
 ## Credits for Tileset
 
-+ Kyle-Dove 
++ Kyle-Dove
 + Heavy-Metal-Lover
 + WesleyFG
-+ Dewitty 
++ Dewitt
 + Zetavares852
 + XDinky
 + Newtiteuf
