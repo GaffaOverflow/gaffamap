@@ -17,15 +17,15 @@ name: Lint Code Base
 on:
   push:
     branches-ignore: [main]
-    path_ignore:
-    	- 'img/*'
-    	- 'tiles/*'
+    paths-ignore:
+      - 'img/*'
+      - 'tiles/*'
     # Remove the line above to run when pushing to master
   pull_request:
     branches: [main]
-    path_ignore:
-    	- 'img/*'
-    	- 'tiles/*'
+    paths-ignore:
+      - 'img/*'
+      - 'tiles/*'
 
 
 jobs:
