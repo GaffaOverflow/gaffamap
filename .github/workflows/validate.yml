@@ -1,0 +1,13 @@
+on: [pull_request]
+  
+jobs:
+  verify-json-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Validate JSON
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          #INPUT_SCHEMA: .github/workflows/schema.json
+          INPUT_JSONS: lobby.json,spaces/westwood.json,spaces/osna.json,spaces/haxko.json
+
