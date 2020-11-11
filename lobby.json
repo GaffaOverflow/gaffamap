@@ -139,7 +139,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"haxko.json"
+                 "value":"spaces/haxko.json"
                 }, 
                 {
                  "name":"startLayer",
@@ -162,7 +162,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"westwood.json"
+                 "value":"spaces/westwood.json"
                 }, 
                 {
                  "name":"startLayer",
@@ -185,7 +185,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"osna.json"
+                 "value":"spaces/osna.json"
                 }, 
                 {
                  "name":"startLayer",

@@ -73,7 +73,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"lobby.json#exitWestwood"
+                 "value":"../lobby.json#exitWestwood"
                 }],
          "type":"tilelayer",
          "visible":true,

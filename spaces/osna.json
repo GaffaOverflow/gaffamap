@@ -73,7 +73,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"lobby.json#exitOsna"
+                 "value":"../lobby.json#exitOsna"
                 }],
          "type":"tilelayer",
          "visible":true,
