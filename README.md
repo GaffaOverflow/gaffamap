@@ -6,7 +6,12 @@
 
 This is the gaffamap for the rc3 event 2020. Über den folgenden Link kann die Karte getestet werden:
 
-https://play.wa-test.rc3.cccv.de/_/global/raw.githubusercontent.com/TimKlausmeyer/gaffamap/main/lobby.json
+[Ausprobieren](https://play.wa-test.rc3.cccv.de/_/global/raw.githubusercontent.com/TimKlausmeyer/gaffamap/main/lobby.json)
+
+```
+# Replace <branch> with the branch you want to test
+https://play.wa-test.rc3.cccv.de/_/global/raw.githubusercontent.com/TimKlausmeyer/gaffamap/<branch>/lobby.json
+```
 
 ## Gedanken zur Map
 
@@ -27,9 +32,9 @@ Dann könnte man beim nächsten mal ein Infrastruktur Team bilden.
 
 ## Wie erstelle ich eine Map?
 
-https://rc3.pages.git.cccv.de/world-howto/
+[World HowTo](https://rc3.pages.git.cccv.de/world-howto/)
 
-https://codimd.c3d2.de/WA-Zone-Einstieg-00#
+[WA Zone Einstieg](https://codimd.c3d2.de/WA-Zone-Einstieg-00#)
 
 
 
