@@ -139,7 +139,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"haxko.json"
+                 "value":"spaces/haxko.json"
                 }, 
                 {
                  "name":"startLayer",
@@ -162,7 +162,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"westwood.json"
+                 "value":"spaces/westwood.json"
                 }, 
                 {
                  "name":"startLayer",
@@ -185,7 +185,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"osna.json"
+                 "value":"spaces/osna.json"
                 }, 
                 {
                  "name":"startLayer",
@@ -237,7 +237,7 @@
         {
          "columns":16,
          "firstgid":1,
-         "image":"floor.png",
+         "image":"src/tiles/floor.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -287,7 +287,7 @@
         {
          "columns":16,
          "firstgid":257,
-         "image":"furniture.png",
+         "image":"src/tiles/furniture.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -319,7 +319,7 @@
         {
          "columns":40,
          "firstgid":513,
-         "image":"gaffa.png",
+         "image":"src/logos/gaffa.png",
          "imageheight":642,
          "imagewidth":1280,
          "margin":0,
@@ -332,7 +332,7 @@
         {
          "columns":9,
          "firstgid":1313,
-         "image":"haxko.png",
+         "image":"src/logos/haxko.png",
          "imageheight":158,
          "imagewidth":315,
          "margin":0,
@@ -345,7 +345,7 @@
         {
          "columns":6,
          "firstgid":1349,
-         "image":"westwood.png",
+         "image":"src/logos/westwood.png",
          "imageheight":220,
          "imagewidth":220,
          "margin":0,
@@ -358,7 +358,7 @@
         {
          "columns":10,
          "firstgid":1385,
-         "image":"ctreffos.png",
+         "image":"src/logos/ctreffos.png",
          "imageheight":200,
          "imagewidth":346,
          "margin":0,
