@@ -1,4 +1,12 @@
-on: [pull_request]
+on: 
+  push:
+    pathes-ignore:
+      - 'img/*'
+      - 'tiles/*'
+  pull_request:
+    pathes-ignore:
+      - 'img/*'
+      - 'tiles/*'
   
 jobs:
   verify-json-validation:
