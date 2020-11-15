@@ -37,6 +37,10 @@ Dann könnte man beim nächsten mal ein Infrastruktur Team bilden.
 [WA Zone Einstieg](https://codimd.c3d2.de/WA-Zone-Einstieg-00#)
 
 
+## Weiterführende Links
+
+- [Styleguide](https://howto.rc3.world/styleguide.html)
+- [Stylegenerator](https://rc3.bleeptrack.de/)
 
 ## Credits for Tileset
 
