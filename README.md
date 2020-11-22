@@ -32,7 +32,7 @@ Dann könnte man beim nächsten mal ein Infrastruktur Team bilden.
 
 ## Wie erstelle ich eine Map?
 
-[World HowTo](https://rc3.pages.git.cccv.de/world-howto/)
+[Maps HowTo](https://howto.rc3.world/maps.html)
 
 [WA Zone Einstieg](https://codimd.c3d2.de/WA-Zone-Einstieg-00#)
 
