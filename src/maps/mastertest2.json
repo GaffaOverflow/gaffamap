@@ -49,7 +49,7 @@
                 {
                  "name":"playAudio",
                  "type":"string",
-                 "value":"src\/maps\/alarm.mp3"
+                 "value":"..\/alarm.mp3"
                 }],
          "type":"tilelayer",
          "visible":true,
