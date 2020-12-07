@@ -55,4 +55,5 @@ Unterstützt wird:
 ## Beispiel Maps
 
 **mastertest1.join**   Beispiel für eine Brücke unter der eine Spielfigur durchlaufen kann 
+**mastertest2.join**   Anzeige der neuen Tides 
 
