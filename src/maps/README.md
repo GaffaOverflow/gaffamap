@@ -1,6 +1,6 @@
 # Mastermaps
 
-**master.join** ist das abgestimmte Template für den Bau der Maps. Festgelegt wurden die Namen, Positionen und die Nutzung der Layer.
+**master.json** ist das abgestimmte Template für den Bau der Maps. Festgelegt wurden die Namen, Positionen und die Nutzung der Layer.
 Der "Interactive" Layer ist ein Platzhalter, welcher mit einem oder mehreren Layern für die entsprechenden Aktion ersetzt wird. Benötigt werden pro Ereignis, auch für unterschiedliche Orte, ein Layer.
 
 Unterstützt wird:
