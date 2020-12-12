@@ -22,6 +22,7 @@ def merge_tilesets(m):
             tileset['firstgid'] = merged_map_next_tileset_gid
             merged_map_next_tileset_gid = merged_map_next_tileset_gid + tileset['tilecount']
             merged_map['tilesets'].append(tileset)
+    return tileset_map
 
 def merge_tilelayer(layer, m):
     global merged_map, min_x, min_y
