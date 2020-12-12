@@ -1,0 +1,12 @@
+[
+    {
+        "path": "src/maps/temptiletest.json",
+        "x": 0,
+        "y": 0
+    },
+    {
+        "path": "src/maps/mastertest2.json",
+        "x": 50,
+        "y": 20
+    }
+]
