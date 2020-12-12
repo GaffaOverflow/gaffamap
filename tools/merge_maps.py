@@ -2,6 +2,27 @@
 
 import json
 
+def merge_tilesets(m):
+    tileset_map = {}
+    global merged_map, merged_map_next_tileset_gid
+    for tileset in m['tilesets']:
+        found = False
+        merged_tileset_start = -1
+        for merged_tileset in merged_map['tilesets']:
+            if tileset['image'] == merged_tileset['image']:
+                found = True
+                merged_tileset_start = merged_tileset['firstgid']
+                break
+        if found:
+            for i in range(tileset['tilecount']):
+                tileset_map[tileset['firstgid']+i] = merged_tileset_start + i
+        else:
+            for i in range(tileset['tilecount']):
+                tileset_map[tileset['firstgid']+i] = merged_map_next_tileset_gid + i
+            tileset['firstgid'] = merged_map_next_tileset_gid
+            merged_map_next_tileset_gid = merged_map_next_tileset_gid + tileset['tilecount']
+            merged_map['tilesets'].append(tileset)
+
 def merge_tilelayer(layer, m):
     global merged_map, min_x, min_y
     found = False
@@ -89,25 +110,7 @@ merged_map['height'] = max_y - min_y
 print("map size: ", merged_map['width'], "x", merged_map['height'])
 
 for m in map_parts:
-    tileset_map = {}
-    # merge tilesets
-    for tileset in m['tilesets']:
-        found = False
-        merged_tileset_start = -1
-        for merged_tileset in merged_map['tilesets']:
-            if tileset['image'] == merged_tileset['image']:
-                found = True
-                merged_tileset_start = merged_tileset['firstgid']
-                break
-        if found:
-            for i in range(tileset['tilecount']):
-                tileset_map[tileset['firstgid']+i] = merged_tileset_start + i
-        else:
-            for i in range(tileset['tilecount']):
-                tileset_map[tileset['firstgid']+i] = merged_map_next_tileset_gid + i
-            tileset['firstgid'] = merged_map_next_tileset_gid
-            merged_map_next_tileset_gid = merged_map_next_tileset_gid + tileset['tilecount']
-            merged_map['tilesets'].append(tileset)
+    tileset_map = merge_tilesets(m)
 
     # merge layers
     for layer in m['layers']:
