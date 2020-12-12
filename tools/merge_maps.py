@@ -16,12 +16,12 @@ def merge_tilesets(m):
                 break
         if found:
             for i in range(tileset["tilecount"]):
-                tileset_map[tileset["firstgid"]+i] = merged_tileset_start + i
+                tileset_map[tileset["firstgid"] + i] = merged_tileset_start + i
         else:
             for i in range(tileset["tilecount"]):
-                tileset_map[tileset["firstgid"]+i] = merged_map_next_tileset_gid + i
+                tileset_map[tileset["firstgid"] + i] = merged_map_next_tileset_gid + i
             tileset["firstgid"] = merged_map_next_tileset_gid
-            merged_map_next_tileset_gid = merged_map_next_tileset_gid + tileset["tilecount"]
+            merged_map_next_tileset_gid += tileset["tilecount"]
             merged_map["tilesets"].append(tileset)
     return tileset_map
 
