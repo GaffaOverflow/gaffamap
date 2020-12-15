@@ -3,10 +3,22 @@
 import json
 
 
+def resolve_path(map_path, image_path):
+    map_path_parts = map_path.split("/")[:-1]
+    image_path_parts = image_path.split("/")
+    final_path = map_path_parts
+    for image_path_part in image_path_parts:
+        if image_path_part == "..":
+            del final_path[-1]
+        else:
+            final_path.append(image_path_part)
+    return "/".join(final_path)
+
 def merge_tilesets(m):
     tileset_map = {}
     global merged_map, merged_map_next_tileset_gid
     for tileset in m["tilesets"]:
+        tileset["image"] = resolve_path(m["path"], tileset["image"])
         found = False
         merged_tileset_start = -1
         for merged_tileset in merged_map["tilesets"]:
@@ -98,6 +110,7 @@ for m in map_list:
     if map_data["compressionlevel"] != -1:
         print("skipping map", m["path"], "(can't handle compression at the moment)")
         continue
+    map_data["path"] = m["path"]
     map_data["offset_x"] = m["x"]
     map_data["offset_y"] = m["y"]
     map_parts.append(map_data)
@@ -129,4 +142,4 @@ for m in map_parts:
         else:
             print("skipping layer", layer["name"], "(can't handle", layer["type"], "yet)")
             continue
-json.dump(merged_map, open("src/maps/merged_map.json", "w"))
+json.dump(merged_map, open("main.json", "w"))
