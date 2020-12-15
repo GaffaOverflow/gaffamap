@@ -79,7 +79,7 @@
                 {
                  "name":"playAudio",
                  "type":"string",
-                 "value":"https:\/\/raw.githubusercontent.com\/GaffaOverflow\/gaffamap\/main\/src\/audio\/adventure\/andrealinequiet.mp3"
+                 "value":"https:\/\/raw.githubusercontent.com\/GaffaOverflow\/gaffamap\/main\/src\/audio\/adventure\/andrealinquiet.mp3"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -313,7 +313,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"minecraft1.json"
+                 "value":"\/src\/maps\/minecraft1.json"
                 }],
          "type":"tilelayer",
          "visible":true,
