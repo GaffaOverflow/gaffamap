@@ -28,12 +28,13 @@ def insert_floor_layer():
     floor_layer["y"] = 0
     merged_map["layers"].append(floor_layer)
 
-def get_floor_layer_index():
+def get_layer_index(previous_layer_name):
     global merged_map
+    if previous_layer_name is None:
+        return 0
     for i in range(len(merged_map["layers"])):
-        if merged_map["layers"][i]["name"] == "floorLayer":
-            return i
-    return -1
+        if merged_map["layers"][i]["name"] == previous_layer_name:
+            return i + 1
 
 def merge_tilesets(m):
     tileset_map = {}
@@ -68,7 +69,7 @@ def apply_tileset_map(tileset_map, value):
     result = result ^ (value & mask)
     return result
 
-def merge_tilelayer(layer, m, tileset_map, below_floor_layer):
+def merge_tilelayer(layer, m, tileset_map, previous_layer_name):
     global merged_map, min_x, min_y
     found = False
     for merged_layer in merged_map["layers"]:
@@ -106,10 +107,10 @@ def merge_tilelayer(layer, m, tileset_map, below_floor_layer):
                 merged_pos = merged_y * new_layer["width"] + merged_x
                 layer_pos = y * layer["width"] + x
                 new_layer["data"][merged_pos] = apply_tileset_map(tileset_map, layer["data"][layer_pos])
-        if below_floor_layer:
-            merged_map["layers"].insert(get_floor_layer_index(), new_layer)
-        else:
-            merged_map["layers"].append(new_layer)
+        merged_map["layers"].insert(
+                get_layer_index(previous_layer_name),
+                new_layer
+                )
 
 
 merged_map = {}
@@ -168,8 +169,8 @@ insert_floor_layer()
 
 for m in map_parts:
     tileset_map = merge_tilesets(m)
+    previous_layer_name = None
 
-    below_floor_layer = True
     # merge layers
     for layer in m["layers"]:
         if "compression" in layer and layer["compression"] != "":
@@ -178,9 +179,10 @@ for m in map_parts:
         if layer["type"] == "tilelayer":
             if layer["name"] == "start" and not first_map:
                 continue
-            merge_tilelayer(layer, m, tileset_map, below_floor_layer)
+            merge_tilelayer(layer, m, tileset_map, previous_layer_name)
+            previous_layer_name = layer["name"]
         elif layer["type"] == "objectgroup" and layer["name"] == "floorLayer":
-            below_floor_layer = False
+            previous_layer_name = layer["name"]
             continue
         else:
             print("skipping layer", layer["name"], "(can't handle", layer["type"], "yet)")
