@@ -68,8 +68,6 @@
          "height":115,
          "id":10,
          "name":"Base",
-         "offsetx":2.8421709430404e-14,
-         "offsety":30.6666666666667,
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
