@@ -5,18 +5,6 @@
         "y": 0
     },
     {
-        "path": "src/maps/adventure1.json",
-        "x": -50,
-        "y": 20
-    }
-,
-    {
-        "path": "src/maps/adventure2.json",
-        "x": 50,
-        "y": -20
-    }
-,
-    {
         "path": "src/maps/adventure3.json",
         "x": 50,
         "y": 20
