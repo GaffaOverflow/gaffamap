@@ -120,7 +120,7 @@
         {
          "columns":9,
          "firstgid":1,
-         "image":"..\/..\/..\/Development\/mymaps\/myfirstmap\/floor_gaffa.png",
+         "image":"..\/tiles\/floor_gaffa.png",
          "imageheight":288,
          "imagewidth":288,
          "margin":0,
