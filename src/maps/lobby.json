@@ -3,7 +3,7 @@
     {
      "export":
         {
-         "target":"..\/gaffamap-main\/src\/maps"
+         "target":"..\/maps"
         }
     },
  "height":100,
@@ -345,7 +345,7 @@
         {
          "columns":9,
          "firstgid":1,
-         "image":"..\/gaffamap-main\/src\/tiles\/floor_gaffa.png",
+         "image":"..\/tiles\/floor_gaffa.png",
          "imageheight":288,
          "imagewidth":288,
          "margin":0,
@@ -358,7 +358,7 @@
         {
          "columns":16,
          "firstgid":82,
-         "image":"..\/gaffamap-main\/src\/tiles\/floor.png",
+         "image":"..\/tiles\/floor.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -371,7 +371,7 @@
         {
          "columns":16,
          "firstgid":338,
-         "image":"..\/gaffamap-main\/src\/tiles\/furniture.png",
+         "image":"..\/tiles\/furniture.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -384,7 +384,7 @@
         {
          "columns":3,
          "firstgid":594,
-         "image":"..\/gaffamap-main\/src\/tiles\/lcd.png",
+         "image":"..\/tiles\/lcd.png",
          "imageheight":96,
          "imagewidth":96,
          "margin":0,
@@ -397,7 +397,7 @@
         {
          "columns":9,
          "firstgid":603,
-         "image":"..\/gaffamap-main\/src\/tiles\/number_tst.png",
+         "image":"..\/tiles\/number_tst.png",
          "imageheight":288,
          "imagewidth":288,
          "margin":0,
@@ -410,7 +410,7 @@
         {
          "columns":9,
          "firstgid":684,
-         "image":"..\/gaffamap-main\/src\/tiles\/objects_gaffa.png",
+         "image":"..\/tiles\/objects_gaffa.png",
          "imageheight":288,
          "imagewidth":288,
          "margin":0,
@@ -423,7 +423,7 @@
         {
          "columns":7,
          "firstgid":765,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/deco\/minideko.png",
+         "image":"..\/tiles.rc3.world-4 2\/deco\/minideko.png",
          "imageheight":416,
          "imagewidth":224,
          "margin":0,
@@ -436,7 +436,7 @@
         {
          "columns":16,
          "firstgid":856,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/deco\/rc3-mullana-single-use.png",
+         "image":"..\/tiles.rc3.world-4 2\/deco\/rc3-mullana-single-use.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -449,7 +449,7 @@
         {
          "columns":16,
          "firstgid":1112,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/deco\/rc3-mullana-objects.png",
+         "image":"..\/tiles.rc3.world-4 2\/deco\/rc3-mullana-objects.png",
          "imageheight":256,
          "imagewidth":512,
          "margin":0,
@@ -462,7 +462,7 @@
         {
          "columns":16,
          "firstgid":1240,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/deco\/rc3-mullana-neon-signs.png",
+         "image":"..\/tiles.rc3.world-4 2\/deco\/rc3-mullana-neon-signs.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -475,7 +475,7 @@
         {
          "columns":1,
          "firstgid":1496,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/c3gelb\/01_disinfection_dispenser_32x32.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/c3gelb\/01_disinfection_dispenser_32x32.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -488,7 +488,7 @@
         {
          "columns":1,
          "firstgid":1497,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/cert_safety\/01_fire_extinguisher.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/cert_safety\/01_fire_extinguisher.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -501,7 +501,7 @@
         {
          "columns":1,
          "firstgid":1498,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/cert_safety\/04_emergency_exit_left_32x32-sheet.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/cert_safety\/04_emergency_exit_left_32x32-sheet.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -514,7 +514,7 @@
         {
          "columns":1,
          "firstgid":1499,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/cert_safety\/05_emergency_exit_right_32x32.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/cert_safety\/05_emergency_exit_right_32x32.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -527,7 +527,7 @@
         {
          "columns":1,
          "firstgid":1500,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/cert_safety\/02_kfz_verbandskasten_32x32.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/cert_safety\/02_kfz_verbandskasten_32x32.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -540,7 +540,7 @@
         {
          "columns":1,
          "firstgid":1501,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/food_and_drinks\/02_mate_crates_1.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/food_and_drinks\/02_mate_crates_1.png",
          "imageheight":96,
          "imagewidth":32,
          "margin":0,
@@ -553,7 +553,7 @@
         {
          "columns":2,
          "firstgid":1504,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/food_and_drinks\/15_Pizza.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/food_and_drinks\/15_Pizza.png",
          "imageheight":64,
          "imagewidth":64,
          "margin":0,
@@ -566,7 +566,7 @@
         {
          "columns":2,
          "firstgid":1508,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/food_and_drinks\/06_mate_bottles.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/food_and_drinks\/06_mate_bottles.png",
          "imageheight":64,
          "imagewidth":64,
          "margin":0,
@@ -579,7 +579,7 @@
         {
          "columns":1,
          "firstgid":1512,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/13_winkekatze.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/13_winkekatze.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -592,7 +592,7 @@
         {
          "columns":1,
          "firstgid":1513,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/22_donotenter.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/22_donotenter.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -605,7 +605,7 @@
         {
          "columns":1,
          "firstgid":1514,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/24_beamer_right_32x32.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/24_beamer_right_32x32.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -618,7 +618,7 @@
         {
          "columns":1,
          "firstgid":1515,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/17_rucksack_freigestellt_kl.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/17_rucksack_freigestellt_kl.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -631,7 +631,7 @@
         {
          "columns":1,
          "firstgid":1516,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/18_rucksack2_freigestellt_kl.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/18_rucksack2_freigestellt_kl.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -644,7 +644,7 @@
         {
          "columns":3,
          "firstgid":1517,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/30_Neuland.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/30_Neuland.png",
          "imageheight":64,
          "imagewidth":96,
          "margin":0,
@@ -657,7 +657,7 @@
         {
          "columns":1,
          "firstgid":1523,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/14_gigaset_dect_base.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/14_gigaset_dect_base.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -670,7 +670,7 @@
         {
          "columns":1,
          "firstgid":1524,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/27_winkekatze_anim1.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/27_winkekatze_anim1.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -683,7 +683,7 @@
         {
          "columns":1,
          "firstgid":1525,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/19_flauschehorn.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/19_flauschehorn.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -696,7 +696,7 @@
         {
          "columns":1,
          "firstgid":1526,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/64_tischdokumente_1.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/64_tischdokumente_1.png",
          "imageheight":64,
          "imagewidth":32,
          "margin":0,
@@ -709,7 +709,7 @@
         {
          "columns":1,
          "firstgid":1528,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/rc3\/04_rc3_Logo3.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/rc3\/04_rc3_Logo3.png",
          "imageheight":96,
          "imagewidth":32,
          "margin":0,
@@ -722,7 +722,7 @@
         {
          "columns":1,
          "firstgid":1531,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/06_waffeleisen_32x32.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/06_waffeleisen_32x32.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -735,7 +735,7 @@
         {
          "columns":1,
          "firstgid":1532,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/03_latop_sticker_32x32t.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/03_latop_sticker_32x32t.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
@@ -748,7 +748,7 @@
         {
          "columns":4,
          "firstgid":1533,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/57_zettelfoo.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/57_zettelfoo.png",
          "imageheight":96,
          "imagewidth":128,
          "margin":0,
@@ -761,7 +761,7 @@
         {
          "columns":1,
          "firstgid":1545,
-         "image":"..\/gaffamap-main\/src\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/05_sitzsack.png",
+         "image":"..\/tiles.rc3.world-4 2\/community\/cert\/imgs\/misc\/05_sitzsack.png",
          "imageheight":32,
          "imagewidth":32,
          "margin":0,
