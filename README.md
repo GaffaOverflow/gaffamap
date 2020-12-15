@@ -41,6 +41,7 @@ Dann könnte man beim nächsten mal ein Infrastruktur Team bilden.
 
 - [Styleguide](https://howto.rc3.world/styleguide.html)
 - [Stylegenerator](https://rc3.bleeptrack.de/)
+- [HowTo rC3 world maps](https://git.cccv.de/rc3/howto/-/blob/master/docs/maps.md)
 
 ## Credits for Tileset
 
