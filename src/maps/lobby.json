@@ -172,7 +172,27 @@
          "spacing":0,
          "tilecount":81,
          "tileheight":32,
-         "tilewidth":32
+         "tiles":[
+                {
+                 "id":0,
+                 "properties":[
+                        {
+                         "name":"collision",
+                         "type":"bool",
+                         "value":true
+                        }]
+                },
+                {
+                 "id":8,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }],
+         "tilewidth":32,
+         "transparentcolor":"#000000"
         }, 
         {
          "columns":16,
