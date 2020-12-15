@@ -129,6 +129,8 @@ merged_map["width"] = max_x - min_x
 merged_map["height"] = max_y - min_y
 print("map size: ", merged_map["width"], "x", merged_map["height"])
 
+first_map = True
+
 for m in map_parts:
     tileset_map = merge_tilesets(m)
 
@@ -138,8 +140,11 @@ for m in map_parts:
             print("skipping layer", layer["name"], "because it is compressed")
             continue
         if layer["type"] == "tilelayer":
+            if layer["name"] == "start" and not first_map:
+                continue
             merge_tilelayer(layer, m)
         else:
             print("skipping layer", layer["name"], "(can't handle", layer["type"], "yet)")
             continue
+    first_map = False
 json.dump(merged_map, open("main.json", "w"))
