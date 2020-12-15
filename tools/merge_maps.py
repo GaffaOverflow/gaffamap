@@ -58,6 +58,15 @@ def merge_tilesets(m):
             merged_map["tilesets"].append(tileset)
     return tileset_map
 
+def apply_tileset_map(tileset_map, value):
+    mask = 0x60000000
+    result = 0
+    try:
+        result = tileset_map[value & ~ mask]
+    except KeyError:
+        return 0
+    result = result ^ (value & mask)
+    return result
 
 def merge_tilelayer(layer, m, tileset_map, below_floor_layer):
     global merged_map, min_x, min_y
@@ -71,10 +80,7 @@ def merge_tilelayer(layer, m, tileset_map, below_floor_layer):
                     merged_y = m["offset_y"] - min_y + y
                     merged_pos = merged_y * merged_layer["width"] + merged_x
                     layer_pos = y * layer["width"] + x
-                    try:
-                        merged_layer["data"][merged_pos] = tileset_map[layer["data"][layer_pos]]
-                    except KeyError:
-                        merged_layer["data"][merged_pos] = 0
+                    merged_layer["data"][merged_pos] = apply_tileset_map(tileset_map, layer["data"][layer_pos])
             break
     if not found:
         new_layer = {}
@@ -99,10 +105,7 @@ def merge_tilelayer(layer, m, tileset_map, below_floor_layer):
                 merged_y = m["offset_y"] - min_y + y
                 merged_pos = merged_y * new_layer["width"] + merged_x
                 layer_pos = y * layer["width"] + x
-                try:
-                    new_layer["data"][merged_pos] = tileset_map[layer["data"][layer_pos]]
-                except KeyError:
-                    new_layer["data"][merged_pos] = 0
+                new_layer["data"][merged_pos] = apply_tileset_map(tileset_map, layer["data"][layer_pos])
         if below_floor_layer:
             merged_map["layers"].insert(get_floor_layer_index(), new_layer)
         else:
