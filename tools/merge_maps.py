@@ -59,7 +59,7 @@ def merge_tilesets(m):
     return tileset_map
 
 
-def merge_tilelayer(layer, m, below_floor_layer):
+def merge_tilelayer(layer, m, tileset_map, below_floor_layer):
     global merged_map, min_x, min_y
     found = False
     for merged_layer in merged_map["layers"]:
@@ -71,7 +71,10 @@ def merge_tilelayer(layer, m, below_floor_layer):
                     merged_y = m["offset_y"] - min_y + y
                     merged_pos = merged_y * merged_layer["width"] + merged_x
                     layer_pos = y * layer["width"] + x
-                    merged_layer["data"][merged_pos] = layer["data"][layer_pos]
+                    try:
+                        merged_layer["data"][merged_pos] = tileset_map[layer["data"][layer_pos]]
+                    except KeyError:
+                        merged_layer["data"][merged_pos] = 0
             break
     if not found:
         new_layer = {}
@@ -96,7 +99,10 @@ def merge_tilelayer(layer, m, below_floor_layer):
                 merged_y = m["offset_y"] - min_y + y
                 merged_pos = merged_y * new_layer["width"] + merged_x
                 layer_pos = y * layer["width"] + x
-                new_layer["data"][merged_pos] = layer["data"][layer_pos]
+                try:
+                    new_layer["data"][merged_pos] = tileset_map[layer["data"][layer_pos]]
+                except KeyError:
+                    new_layer["data"][merged_pos] = 0
         if below_floor_layer:
             merged_map["layers"].insert(get_floor_layer_index(), new_layer)
         else:
@@ -169,7 +175,7 @@ for m in map_parts:
         if layer["type"] == "tilelayer":
             if layer["name"] == "start" and not first_map:
                 continue
-            merge_tilelayer(layer, m, below_floor_layer)
+            merge_tilelayer(layer, m, tileset_map, below_floor_layer)
         elif layer["type"] == "objectgroup" and layer["name"] == "floorLayer":
             below_floor_layer = False
             continue
