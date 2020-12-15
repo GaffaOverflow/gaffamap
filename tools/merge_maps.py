@@ -59,7 +59,7 @@ def merge_tilesets(m):
     return tileset_map
 
 def apply_tileset_map(tileset_map, value):
-    mask = 0x60000000
+    mask = 0xE0000000
     result = 0
     try:
         result = tileset_map[value & ~ mask]
