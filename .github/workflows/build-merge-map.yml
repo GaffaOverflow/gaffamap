@@ -12,9 +12,8 @@ jobs:
         run: sudo apt-get update
       - name: install python 
         run: sudo apt-get install python3
-      - name: save current date
+      - name: run merge skript
         run: |
-          # do some operation that changes a file in the git repo
           python tools/merge_maps.py
       - name: setup git config
         run: |
