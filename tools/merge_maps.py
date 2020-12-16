@@ -224,8 +224,11 @@ for tileset in merge_config["hidden_tiles"]:
             if p["name"] == "collides":
                 if p["value"]:
                     collides = True
-        tileset_map[get_tile_gid(name, i)] = collides ? empty_collides_tile_gid : empty_tile_gid
+        tileset_map[get_tile_gid(name, i)] = empty_collides_tile_gid if collides else empty_tile_gid
+
 for layer in merged_map["layers"]:
+    if not layer["type"] == "tilelayer":
+        continue
     for d in layer["data"]:
         d = apply_tileset_map(tileset_map, d)
 json.dump(merged_map, open("main.json", "w"))
