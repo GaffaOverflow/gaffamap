@@ -79,11 +79,11 @@ def get_tile_properties(tileset_name, tileset_id):
 
 def apply_tileset_map(tileset_map, value):
     mask = 0xE0000000
-    result = 0
+    result = value
     try:
         result = tileset_map[value & ~ mask]
     except KeyError:
-        return 0
+        return result
     result = result ^ (value & mask)
     return result
 
