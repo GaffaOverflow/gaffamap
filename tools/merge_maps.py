@@ -108,7 +108,7 @@ def merge_tilelayer(layer, m, tileset_map, previous_layer_name):
         new_layer["data"] = [0] * merged_map["height"] * merged_map["width"]
         new_layer["height"] = merged_map["height"]
         new_layer["id"] = merged_map["nextlayerid"]
-        merged_map["nextlayerid"] = merged_map["nextlayerid"] + 1
+        merged_map["nextlayerid"] += 1
         new_layer["name"] = layer["name"]
         new_layer["opacity"] = layer["opacity"]
         if "properties" in layer:
