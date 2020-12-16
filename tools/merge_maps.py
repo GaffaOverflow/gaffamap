@@ -229,6 +229,6 @@ for tileset in merge_config["hidden_tiles"]:
 for layer in merged_map["layers"]:
     if not layer["type"] == "tilelayer":
         continue
-    for d in layer["data"]:
-        d = apply_tileset_map(tileset_map, d)
+    for i in range(len(layer["data"])):
+        layer["data"][i] = apply_tileset_map(tileset_map, layer["data"][i])
 json.dump(merged_map, open("main.json", "w"))
