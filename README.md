@@ -6,11 +6,11 @@
 
 This is the gaffamap for the rc3 event 2020. Über den folgenden Link kann die Karte getestet werden:
 
-[Ausprobieren](https://play.wa-test.rc3.cccv.de/_/global/raw.githubusercontent.com/GaffaOverflow/gaffamap/main/lobby.json)
+[Ausprobieren](https://test.visit.at.wa-test.rc3.cccv.de/_/global/raw.githubusercontent.com/GaffaOverflow/gaffamap/main/lobby.json)
 
 ```bash
 # Replace <branch> with the branch you want to test
-https://play.wa-test.rc3.cccv.de/_/global/raw.githubusercontent.com/GaffaOverflow/gaffamap/<branch>/lobby.json
+https://test.visit.at.wa-test.rc3.cccv.de/_/global/raw.githubusercontent.com/GaffaOverflow/gaffamap/<branch>/lobby.json
 ```
 
 ## Gedanken zur Map
