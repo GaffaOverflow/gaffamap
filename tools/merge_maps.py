@@ -36,11 +36,11 @@ def get_layer_index(previous_layer_name):
         if merged_map["layers"][i]["name"] == previous_layer_name:
             return i + 1
 
-def merge_tilesets(m):
+def merge_tilesets(tilesets, map_path):
     tileset_map = {}
     global merged_map, merged_map_next_tileset_gid
-    for tileset in m["tilesets"]:
-        tileset["image"] = resolve_path(m["path"], tileset["image"])
+    for tileset in tilesets:
+        tileset["image"] = resolve_path(map_path, tileset["image"])
         found = False
         merged_tileset_start = -1
         for merged_tileset in merged_map["tilesets"]:
@@ -59,13 +59,33 @@ def merge_tilesets(m):
             merged_map["tilesets"].append(tileset)
     return tileset_map
 
+def get_tile_gid(tileset_name, tileset_id):
+    global merged_map
+    for tileset in merged_map["tilesets"]:
+        if tileset["name"] == tileset_name:
+            return tileset["firstgid"] + tileset_id
+    return -1
+
+def get_tile_properties(tileset_name, tileset_id):
+    global merged_map
+    for tileset in merged_map["tilesets"]:
+        if tileset["name"] == tileset_name:
+            if not "tiles" in tileset:
+                break
+            for tile in tileset["tiles"]:
+                if tile["id"] == tileset_id:
+                    if "properties" in tile:
+                        return tile["properties"]
+            break
+    return []
+
 def apply_tileset_map(tileset_map, value):
     mask = 0xE0000000
-    result = 0
+    result = value
     try:
         result = tileset_map[value & ~ mask]
     except KeyError:
-        return 0
+        return result
     result = result ^ (value & mask)
     return result
 
@@ -88,7 +108,7 @@ def merge_tilelayer(layer, m, tileset_map, previous_layer_name):
         new_layer["data"] = [0] * merged_map["height"] * merged_map["width"]
         new_layer["height"] = merged_map["height"]
         new_layer["id"] = merged_map["nextlayerid"]
-        merged_map["nextlayerid"] = merged_map["nextlayerid"] + 1
+        merged_map["nextlayerid"] += 1
         new_layer["name"] = layer["name"]
         new_layer["opacity"] = layer["opacity"]
         if "properties" in layer:
@@ -135,8 +155,11 @@ max_y = 0
 
 map_parts = []
 
-map_list = json.load(open("merge.json", "r"))
-for m in map_list:
+merge_config = json.load(open("merge_config.json", "r"))
+
+merge_tilesets(merge_config["tilesets"], "")
+
+for m in merge_config["maps"]:
     map_data = json.load(open(m["path"], "r"))
     if map_data["infinite"]:
         print("skipping map", m["path"], "(can't handle infinite maps)")
@@ -168,7 +191,7 @@ first_map = True
 insert_floor_layer()
 
 for m in map_parts:
-    tileset_map = merge_tilesets(m)
+    tileset_map = merge_tilesets(m["tilesets"], m["path"])
     previous_layer_name = None
 
     # merge layers
@@ -188,4 +211,26 @@ for m in map_parts:
             print("skipping layer", layer["name"], "(can't handle", layer["type"], "yet)")
             continue
     first_map = False
+
+# apply hidden tiles
+empty_tile_gid = get_tile_gid("empty", 0)
+empty_collides_tile_gid = get_tile_gid("empty", 1)
+tileset_map = {}
+for tileset in merge_config["hidden_tiles"]:
+    name = tileset["tileset"]
+    ids = tileset["ids"]
+    for i in ids:
+        properties = get_tile_properties(name, i)
+        collides = False
+        for p in properties:
+            if p["name"] == "collides":
+                if p["value"]:
+                    collides = True
+        tileset_map[get_tile_gid(name, i)] = empty_collides_tile_gid if collides else empty_tile_gid
+
+for layer in merged_map["layers"]:
+    if not layer["type"] == "tilelayer":
+        continue
+    for i in range(len(layer["data"])):
+        layer["data"][i] = apply_tileset_map(tileset_map, layer["data"][i])
 json.dump(merged_map, open("main.json", "w"))
