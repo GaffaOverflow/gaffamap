@@ -1,0 +1,34 @@
+name: Build Map
+on:
+  push
+jobs:
+  merge-map:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the branch
+      - name: checkout
+        uses: actions/checkout@main
+      - name: Update apt 
+        run: sudo apt-get update
+      - name: install python 
+        run: sudo apt-get install python3
+      - name: save current date
+        run: |
+          # do some operation that changes a file in the git repo
+          python tools/merge_maps.py
+      - name: setup git config
+        run: |
+          # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+      - name: commit
+        run: |
+          # Stage the file, commit and push
+          git add main.json 
+          git commit -m "new merge map"
+          git push origin main
+
+    © 2020 GitHub, Inc.
+    Terms
+    Privacy
+    Security
