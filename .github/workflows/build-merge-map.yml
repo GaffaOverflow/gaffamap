@@ -27,8 +27,3 @@ jobs:
           git add main.json 
           git commit -m "new merge map"
           git push origin main
-
-    © 2020 GitHub, Inc.
-    Terms
-    Privacy
-    Security
