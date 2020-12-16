@@ -8,10 +8,6 @@ jobs:
       # Checkout the branch
       - name: checkout
         uses: actions/checkout@main
-      - name: Update apt 
-        run: sudo apt-get update
-      - name: install python 
-        run: sudo apt-get install python3
       - name: run merge skript
         run: |
           python tools/merge_maps.py
