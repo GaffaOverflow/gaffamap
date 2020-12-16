@@ -30,6 +30,16 @@ Unterstützt wird:
 | Interactive (Platzhalter s.o) | Je verschiedener Interaktion ein Layer |
 | Collision | Tiles auf dieser Ebene definieren Stellen die der Spieler nicht passieren kann (z.B. für Wände). Die Tiles müssen die Eigenschaft "collides = true" haben. Hinweis1: Man kann zunächst durch alles durch laufen, bis es auf dieser Ebene blockiert wird. Hinweis2: Kann während der Entwicklung weiter oben platziert werden um die Blockierten stellen einfacher zu definieren. |
 
+Da die unabhängig entwickelten maps gemerged werden, müssen die Interactiv-Layernamen eindeutig sein. Darum sollte wie folgt benannt werden:
+
+inter_xxx_audio_y...
+inter_xxx_web_y...
+inter_xxx_url_y...
+inter_xxx_jitsi_y...
+
+mit xxx erste drei Zeichen Raumname, y... beliebig sprechend
+
+
 ## Beispiel Maps
 
 **mastertest1.join**   Beispiel für eine Brücke unter der eine Spielfigur durchlaufen kann 
