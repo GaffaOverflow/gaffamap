@@ -1,6 +1,8 @@
 name: Build Map
 on:
-  push
+  push:
+    paths:
+      - '**.json'
 jobs:
   merge-map:
     runs-on: ubuntu-latest
