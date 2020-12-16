@@ -59,6 +59,24 @@ def merge_tilesets(tilesets, map_path):
             merged_map["tilesets"].append(tileset)
     return tileset_map
 
+def get_tile_gid(tileset_name, tileset_id):
+    global merged_map
+    for tileset in merged_map["tilesets"]:
+        if tileset["name"] == tileset_name:
+            return tileset["firstgid"] + tileset_id
+    return -1
+
+def get_tile_properties(tileset_name, tileset_id):
+    global merged_map
+    for tileset in merged_map["tilesets"]:
+        if tileset["name"] == tileset_name:
+            for tile in tileset["tiles"]:
+                if tile["id"] == tileset_id:
+                    if "properties" in tile:
+                        return tile["properties"]
+            break
+    return []
+
 def apply_tileset_map(tileset_map, value):
     mask = 0xE0000000
     result = 0
@@ -191,4 +209,23 @@ for m in map_parts:
             print("skipping layer", layer["name"], "(can't handle", layer["type"], "yet)")
             continue
     first_map = False
+
+# apply hidden tiles
+empty_tile_gid = get_tile_gid("empty", 0)
+empty_collides_tile_gid = get_tile_gid("empty", 1)
+tileset_map = {}
+for tileset in merge_config["hidden_tiles"]:
+    name = tileset["tileset"]
+    ids = tileset["ids"]
+    for i in ids:
+        properties = get_tile_properties(name, i)
+        collides = False
+        for p in properties:
+            if p["name"] == "collides":
+                if p["value"]:
+                    collides = True
+        tileset_map[get_tile_gid(name, i)] = collides ? empty_collides_tile_gid : empty_tile_gid
+for layer in merged_map["layers"]:
+    for d in layer["data"]:
+        d = apply_tileset_map(tileset_map, d)
 json.dump(merged_map, open("main.json", "w"))
