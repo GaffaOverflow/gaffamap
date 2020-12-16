@@ -70,6 +70,8 @@ def get_tile_properties(tileset_name, tileset_id):
     global merged_map
     for tileset in merged_map["tilesets"]:
         if tileset["name"] == tileset_name:
+            if not "tiles" in tileset:
+                break
             for tile in tileset["tiles"]:
                 if tile["id"] == tileset_id:
                     if "properties" in tile:
