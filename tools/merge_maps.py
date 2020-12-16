@@ -36,11 +36,11 @@ def get_layer_index(previous_layer_name):
         if merged_map["layers"][i]["name"] == previous_layer_name:
             return i + 1
 
-def merge_tilesets(m):
+def merge_tilesets(tilesets, map_path):
     tileset_map = {}
     global merged_map, merged_map_next_tileset_gid
-    for tileset in m["tilesets"]:
-        tileset["image"] = resolve_path(m["path"], tileset["image"])
+    for tileset in tilesets:
+        tileset["image"] = resolve_path(map_path, tileset["image"])
         found = False
         merged_tileset_start = -1
         for merged_tileset in merged_map["tilesets"]:
@@ -135,8 +135,11 @@ max_y = 0
 
 map_parts = []
 
-map_list = json.load(open("merge.json", "r"))
-for m in map_list:
+merge_config = json.load(open("merge_config.json", "r"))
+
+merge_tilesets(merge_config["tilesets"], "")
+
+for m in merge_config["maps"]:
     map_data = json.load(open(m["path"], "r"))
     if map_data["infinite"]:
         print("skipping map", m["path"], "(can't handle infinite maps)")
@@ -168,7 +171,7 @@ first_map = True
 insert_floor_layer()
 
 for m in map_parts:
-    tileset_map = merge_tilesets(m)
+    tileset_map = merge_tilesets(m["tilesets"], m["path"])
     previous_layer_name = None
 
     # merge layers
