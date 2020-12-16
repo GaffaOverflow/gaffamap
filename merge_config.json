@@ -1,5 +1,4 @@
-{
-    "maps": [
+{    "maps": [
         {
             "path": "src/maps/lobby.json",
             "x": 0,
@@ -8,7 +7,7 @@
         {
             "path": "src/maps/adventure3.json",
             "x": -42,
-            "y": 3
+            "y": 0
         }
     ],
     "tilesets": [
