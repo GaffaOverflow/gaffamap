@@ -68,7 +68,7 @@
                 {
                  "name":"playAudio",
                  "type":"string",
-                 "value":"https:\/\/raw.githubusercontent.com\/GaffaOverflow\/gaffamap\/main\/src\/audio\/adventure\/welcome1.mp3"
+                 "value":"..\/audio\/adventure\/welcome1.mp3"
                 }],
          "type":"tilelayer",
          "visible":true,
