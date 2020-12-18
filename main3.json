@@ -407,6 +407,8 @@
          "height":40,
          "id":10,
          "name":"Objects_Top",
+         "offsetx":30,
+         "offsety":20,
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
