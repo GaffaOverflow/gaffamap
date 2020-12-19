@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 import json
-import xml.etree.ElementTree as ET
+import sys
+
 
 def resolve_path(map_path, image_path):
     map_path_parts = map_path.split("/")[:-1]
@@ -40,7 +41,11 @@ def merge_tilesets(tilesets, map_path):
     tileset_map = {}
     global merged_map, merged_map_next_tileset_gid
     for tileset in tilesets:
-        tileset["image"] = resolve_path(map_path, tileset["image"])
+        if "image" in tileset:
+            tileset["image"] = resolve_path(map_path, tileset["image"])
+        else:
+            print("tileset in", map_path, "not embedded")
+            sys.exit(1)
         found = False
         merged_tileset_start = -1
         for merged_tileset in merged_map["tilesets"]:
