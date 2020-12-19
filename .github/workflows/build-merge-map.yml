@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '**.json'
+      - '**.py'
 jobs:
   merge-map:
     runs-on: ubuntu-latest
