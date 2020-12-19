@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import json
-
+import xml.etree.ElementTree as ET
 
 def resolve_path(map_path, image_path):
     map_path_parts = map_path.split("/")[:-1]
