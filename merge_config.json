@@ -47,6 +47,41 @@
           ],
           "tilewidth": 32,
           "transparentcolor": "#000000"
+        },
+        {
+         "columns":7,
+         "firstgid":3,
+         "image":"..\/tiles.rc3.world-4 2\/deco\/minideko.png",
+         "imageheight":416,
+         "imagewidth":224,
+         "margin":0,
+         "name":"minideko",
+         "spacing":0,
+         "tilecount":92,
+         "tileheight":32,
+         "tiles":[
+                {
+                 "animation":[
+                        {
+                         "duration":1001,
+                         "tileid":42
+                        }, 
+                        {
+                         "duration":2001,
+                         "tileid":43
+                        }, 
+                        {
+                         "duration":2001,
+                         "tileid":44
+                        }, 
+                        {
+                         "duration":200,
+                         "tileid":45
+                        }],
+                 "id":91
+                }],
+         "tilewidth":32,
+         "transparentcolor":"#000000"
         }
     ],
     "hidden_tiles": [
