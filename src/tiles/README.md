@@ -9,6 +9,7 @@
 - Jeder der eigene Tiles bauen will macht sich *ein* eigenes Tileset.
 - Weiter unten bitte die Zuständigkeit vermerken
 
+
 ## Verwendung von Tiles
 
 Es gibt Tiles mit einem Raumnamen, diese werden bitte nicht in anderen Räumen ohne Rücksprache mit dem Raumverantwortlichen des Tilesets verwendet.
@@ -19,4 +20,7 @@ Es gibt Tiles mit einem Raumnamen, diese werden bitte nicht in anderen Räumen o
 - objects_gaffa.tsx (Ersteller Max)
 
 ## Raumspeziefisch:
-- museum_gaffa.tsx (Ersteller Max)
+| Tilemap File        | Eigentümer           | Verwendung  |
+| ------------- |:-------------:| -----:|
+| museum_gaffa.tsx |Max| Bitte nur nach Rücksprache!|
+
