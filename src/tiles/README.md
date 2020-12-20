@@ -21,6 +21,6 @@ Es gibt Tiles mit einem Raumnamen, diese werden bitte nicht in anderen Räumen o
 
 ## Raumspeziefisch:
 | Tilemap File        | Eigentümer           | Verwendung  |
-| ------------- |:-------------:| -----:|
+| ------------- | ------------- | ----- |
 | museum_gaffa.tsx |Max| Bitte nur nach Rücksprache!|
 
