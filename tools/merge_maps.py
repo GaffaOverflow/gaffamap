@@ -64,6 +64,22 @@ def insert_background_layer():
         x = merged_map["width"]-1
         background_layer["data"][y * merged_map["width"] + x] = border | 0xA0000000
 
+    x = 0
+    y = 0
+    background_layer["data"][y * merged_map["width"] + x] = infill | 0x20000000
+
+    x = merged_map["width"]-1
+    y = 0
+    background_layer["data"][y * merged_map["width"] + x] = infill
+
+    x = 0
+    y = merged_map["height"]-1
+    background_layer["data"][y * merged_map["width"] + x] = infill | 0xa0000000
+
+    x = merged_map["width"]-1
+    y = merged_map["height"]-1
+    background_layer["data"][y * merged_map["width"] + x] = infill | 0x40000000
+
     merged_map["layers"].insert(0, background_layer)
 
 def get_layer_index(previous_layer_name):
