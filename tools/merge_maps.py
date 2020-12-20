@@ -29,6 +29,43 @@ def insert_floor_layer():
     floor_layer["y"] = 0
     merged_map["layers"].append(floor_layer)
 
+def insert_background_layer():
+    global merged_map
+    background_layer = {}
+    background_layer["height"] = merged_map["height"]
+    background_layer["id"] = merged_map["nextlayerid"]
+    merged_map["nextlayerid"] += 1
+    background_layer["name"] = "global background"
+    background_layer["opacity"] = 1
+    background_layer["type"] = "tilelayer"
+    background_layer["visible"] = True
+    background_layer["width"] = merged_map["width"]
+    background_layer["x"] = 0
+    background_layer["y"] = 0
+
+    infill = get_tile_gid("floor_gaffa", 1)
+    border = get_tile_gid("floor_gaffa", 2)
+
+    background_layer["data"] = [infill] * merged_map["height"] * merged_map["width"]
+
+    for x in range(1, merged_map["width"]-1):
+        y = 0
+        background_layer["data"][y * merged_map["width"] + x] = border
+
+    for x in range(1, merged_map["width"]-1):
+        y = merged_map["height"]-1
+        background_layer["data"][y * merged_map["width"] + x] = border | 0x40000000
+
+    for y in range(1, merged_map["height"]-1):
+        x = 0
+        background_layer["data"][y * merged_map["width"] + x] = border | 0x20000000
+
+    for y in range(1, merged_map["height"]-1):
+        x = merged_map["width"]-1
+        background_layer["data"][y * merged_map["width"] + x] = border | 0xA0000000
+
+    merged_map["layers"].insert(0, background_layer)
+
 def get_layer_index(previous_layer_name):
     global merged_map
     if previous_layer_name is None:
@@ -242,4 +279,6 @@ for layer in merged_map["layers"]:
         continue
     for i in range(len(layer["data"])):
         layer["data"][i] = apply_tileset_map(tileset_map, layer["data"][i])
+
+insert_background_layer()
 json.dump(merged_map, open("main.json", "w"))
