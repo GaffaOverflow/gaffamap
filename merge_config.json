@@ -51,7 +51,7 @@
         {
          "columns":7,
          "firstgid":3,
-         "image":"..\/tiles.rc3.world-4 2\/deco\/minideko.png",
+         "image":"src\/tiles.rc3.world-4 2\/deco\/minideko.png",
          "imageheight":416,
          "imagewidth":224,
          "margin":0,
