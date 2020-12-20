@@ -1,4 +1,6 @@
-{    "maps": [
+{
+    "border_size": 2,
+    "maps": [
         {
             "path": "src/maps/lobby.json",
             "x": 0,

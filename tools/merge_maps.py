@@ -230,8 +230,8 @@ for m in merge_config["maps"]:
         print("skipping map", m["path"], "(can't handle compression at the moment)")
         continue
     map_data["path"] = m["path"]
-    map_data["offset_x"] = m["x"]
-    map_data["offset_y"] = m["y"]
+    map_data["offset_x"] = m["x"] + merge_config["border_size"]
+    map_data["offset_y"] = m["y"] + merge_config["border_size"]
     map_parts.append(map_data)
     if m["x"] < min_x:
         min_x = m["x"]
@@ -244,8 +244,8 @@ for m in merge_config["maps"]:
 
 print("min_x:", min_x, "max_x:", max_x)
 print("min_y:", min_y, "max_y:", max_y)
-merged_map["width"] = max_x - min_x
-merged_map["height"] = max_y - min_y
+merged_map["width"] = max_x - min_x + 2 * merge_config["border_size"]
+merged_map["height"] = max_y - min_y + 2 * merge_config["border_size"]
 print("map size: ", merged_map["width"], "x", merged_map["height"])
 
 first_map = True
