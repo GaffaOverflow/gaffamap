@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+import sys
 
 
 def resolve_path(map_path, image_path):
@@ -40,7 +41,11 @@ def merge_tilesets(tilesets, map_path):
     tileset_map = {}
     global merged_map, merged_map_next_tileset_gid
     for tileset in tilesets:
-        tileset["image"] = resolve_path(map_path, tileset["image"])
+        if "image" in tileset:
+            tileset["image"] = resolve_path(map_path, tileset["image"])
+        else:
+            print("tileset in", map_path, "not embedded")
+            sys.exit(1)
         found = False
         merged_tileset_start = -1
         for merged_tileset in merged_map["tilesets"]:
@@ -113,6 +118,10 @@ def merge_tilelayer(layer, m, tileset_map, previous_layer_name):
         new_layer["opacity"] = layer["opacity"]
         if "properties" in layer:
             new_layer["properties"] = layer["properties"]
+            for property in new_layer["properties"]:
+                if property["name"] == "playAudio":
+                    if not property["value"].startswith("http"):
+                        property["value"] = resolve_path(m["path"], property["value"])
         new_layer["startx"] = 0
         new_layer["starty"] = 0
         new_layer["type"] = "tilelayer"
