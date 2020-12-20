@@ -20,7 +20,8 @@ Es gibt Tiles mit einem Raumnamen, diese werden bitte nicht in anderen Räumen o
 - objects_gaffa.tsx (Ersteller Max)
 
 ## Raumspeziefisch:
-| Tilemap File        | Eigentümer           | Verwendung  |
-| ------------- | ------------- | ----- |
-| museum_gaffa.tsx |Max| Bitte nur nach Rücksprache!|
+|   Tilemap File	|   Eigentümer	|   Verwendung	|
+|---	|---	|---	|
+|   museum_gaffa.tsx	|   Max	|   Bitte nur nach Rücksprache!	|
+|   	|   	|   	|
 
