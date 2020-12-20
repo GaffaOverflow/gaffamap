@@ -14,9 +14,9 @@
 Es gibt Tiles mit einem Raumnamen, diese werden bitte nicht in anderen Räumen ohne Rücksprache mit dem Raumverantwortlichen des Tilesets verwendet.
 
 ## Offen zur Verwendung von allen:
-EthernetAnimation_gaffa.tsx (Ersteller Max)
-floor_gaffa.tsx (Ersteller Max)
-objects_gaffa.tsx (Ersteller Max)
+- EthernetAnimation_gaffa.tsx (Ersteller Max)
+- floor_gaffa.tsx (Ersteller Max)
+- objects_gaffa.tsx (Ersteller Max)
 
 ## Raumspeziefisch:
-museum_gaffa.tsx (Ersteller Max)
+- museum_gaffa.tsx (Ersteller Max)
