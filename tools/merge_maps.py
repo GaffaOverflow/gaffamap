@@ -118,6 +118,10 @@ def merge_tilelayer(layer, m, tileset_map, previous_layer_name):
         new_layer["opacity"] = layer["opacity"]
         if "properties" in layer:
             new_layer["properties"] = layer["properties"]
+            for property in new_layer["properties"]:
+                if property["name"] == "playAudio":
+                    if not property["value"].startswith("http"):
+                        property["value"] = resolve_path(m["path"], property["value"])
         new_layer["startx"] = 0
         new_layer["starty"] = 0
         new_layer["type"] = "tilelayer"
