@@ -11,6 +11,11 @@
             "x": -42,
             "y": 0
         },
+		 {
+            "path": "src/maps/meeting1.json",
+            "x": 0,
+            "y": 33
+        },
         {
             "path": "src/maps/meeting2.json",
             "x": 24,
