@@ -42,6 +42,7 @@ Dann könnte man beim nächsten mal ein Infrastruktur Team bilden.
 - [Styleguide](https://howto.rc3.world/styleguide.html)
 - [Stylegenerator](https://rc3.bleeptrack.de/)
 - [HowTo rC3 world maps](https://git.cccv.de/rc3/howto/-/blob/master/docs/maps.md)
+- [Guide zu den offiziellen RC3 Tiles](https://git.cccv.de/rc3/world-tiles/-/blob/master/Readme-Mullana-Tilesets.pdf)
 
 ## Credits for Tileset
 
