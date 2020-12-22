@@ -24,6 +24,13 @@ This tilesets don't have a dedicated function and should only be used as deco.
 ### mullana tilesets
 see [Readme-Mullana-Tilesets.pdf](Readme-Mullana-Tilesets.pdf)
 
+## Community Tilesets
+You need to initialize the submodules first.
+
+`git submodule init`
+
+`git submodule update --remote`
+
 ### community/cert
 We provide well 250 sorted sprites from mate crates to a security kit for your very own assembly map ;)
 Please take a look at its own README.md for more informations.
@@ -32,4 +39,4 @@ Please take a look at its own README.md for more informations.
 If you want to contribute your tilesets to this page, please put them in a git repo and send us an email with a cloneable link to your repository to and we'll add them here.
 
 ## Contact
-You can reach us at tiles@c3events.de, for questions, proposals, improvements or if you want to share your own tilesets.
+You can reach us at [tiles@rc3.world](mailto:tiles@rc3.world), for questions, proposals, improvements or if you want to share your own tilesets.
