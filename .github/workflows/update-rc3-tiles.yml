@@ -12,7 +12,7 @@ jobs:
       - name: download rc3-wordl-tiles
         run: |
          git clone --recurse-submodules https://git.cccv.de/rc3/world-tiles.git
-	 cp -r world-tiles/* src/tiles.rc3.world-4\ 2/ 
+         cp -r world-tiles/* src/tiles.rc3.world-4\ 2/ 
           
       - name: setup git config
         run: |
