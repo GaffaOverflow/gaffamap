@@ -1,7 +1,7 @@
 name: update rc3 tiles
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/5 * * * *"
 jobs:
   merge-map:
     runs-on: ubuntu-latest
