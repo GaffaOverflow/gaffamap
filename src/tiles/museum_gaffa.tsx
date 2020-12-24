@@ -4,19 +4,26 @@
  <tile id="0">
   <animation>
    <frame tileid="0" duration="1000"/>
-   <frame tileid="3" duration="100"/>
+   <frame tileid="61" duration="100"/>
   </animation>
  </tile>
  <tile id="1">
   <animation>
    <frame tileid="1" duration="1000"/>
-   <frame tileid="3" duration="100"/>
+   <frame tileid="62" duration="100"/>
   </animation>
  </tile>
  <tile id="2">
   <animation>
    <frame tileid="2" duration="1000"/>
-   <frame tileid="3" duration="100"/>
+   <frame tileid="71" duration="100"/>
+  </animation>
+ </tile>
+ <tile id="6">
+  <animation>
+   <frame tileid="6" duration="200"/>
+   <frame tileid="7" duration="200"/>
+   <frame tileid="8" duration="200"/>
   </animation>
  </tile>
 </tileset>
