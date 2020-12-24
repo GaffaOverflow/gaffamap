@@ -190,8 +190,70 @@
          "source":"..\/tiles\/labels_gaffa.tsx"
         }, 
         {
+         "columns":9,
          "firstgid":244,
-         "source":"..\/tiles\/museum_gaffa.tsx"
+         "image":"..\/tiles\/museum_gaffa.png",
+         "imageheight":288,
+         "imagewidth":288,
+         "margin":0,
+         "name":"museum_gaffa",
+         "spacing":0,
+         "tilecount":81,
+         "tileheight":32,
+         "tiles":[
+                {
+                 "animation":[
+                        {
+                         "duration":1000,
+                         "tileid":0
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":61
+                        }],
+                 "id":0
+                }, 
+                {
+                 "animation":[
+                        {
+                         "duration":1000,
+                         "tileid":1
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":62
+                        }],
+                 "id":1
+                }, 
+                {
+                 "animation":[
+                        {
+                         "duration":1000,
+                         "tileid":2
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":71
+                        }],
+                 "id":2
+                }, 
+                {
+                 "animation":[
+                        {
+                         "duration":200,
+                         "tileid":6
+                        }, 
+                        {
+                         "duration":200,
+                         "tileid":7
+                        }, 
+                        {
+                         "duration":200,
+                         "tileid":8
+                        }],
+                 "id":6
+                }],
+         "tilewidth":32
         }, 
         {
          "columns":9,
