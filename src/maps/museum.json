@@ -180,7 +180,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/github.com\/tosterkamp\/random-redirect\/"
+                 "value":"https:\/\/random-redirect.de\/"
                 }],
          "type":"tilelayer",
          "visible":true,
