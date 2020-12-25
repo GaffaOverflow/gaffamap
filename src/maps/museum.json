@@ -216,7 +216,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.youtube.com\/watch?v=HIMUTGU60dU"
+                 "value":"https:\/\/www.youtube.com\/embed\/HIMUTGU60dU"
                 }],
          "type":"tilelayer",
          "visible":true,
