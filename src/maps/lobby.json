@@ -35,7 +35,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"exitSceneUrl",
+                 "name":"exitUrl",
                  "type":"string",
                  "value":"{<lobby>\/maps\/erfas-spaces-north.json#start_gaffa-overflow}"
                 }],
