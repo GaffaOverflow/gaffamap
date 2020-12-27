@@ -19,7 +19,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"lobby>\/erfas-spaces-north.json"
+                 "value":"https:\/\/visit.at.rc3.world\/as\/lobby\/erfas-spaces-north.json"
                 }],
          "type":"tilelayer",
          "visible":true,
