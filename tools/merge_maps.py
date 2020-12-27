@@ -43,8 +43,8 @@ def insert_background_layer():
     background_layer["x"] = 0
     background_layer["y"] = 0
 
-    infill = get_tile_gid("floor_gaffa", 1)
-    border = get_tile_gid("floor_gaffa", 2)
+    infill = get_tile_gid("src/tiles/floor_gaffa.png", 1)
+    border = get_tile_gid("src/tiles/floor_gaffa.png", 2)
 
     background_layer["data"] = [infill] * merged_map["height"] * merged_map["width"]
 
@@ -117,17 +117,17 @@ def merge_tilesets(tilesets, map_path):
             merged_map["tilesets"].append(tileset)
     return tileset_map
 
-def get_tile_gid(tileset_name, tileset_id):
+def get_tile_gid(tileset_path, tileset_id):
     global merged_map
     for tileset in merged_map["tilesets"]:
-        if tileset["name"] == tileset_name:
+        if tileset["image"] == tileset_path:
             return tileset["firstgid"] + tileset_id
     return -1
 
-def get_tile_properties(tileset_name, tileset_id):
+def get_tile_properties(tileset_path, tileset_id):
     global merged_map
     for tileset in merged_map["tilesets"]:
-        if tileset["name"] == tileset_name:
+        if tileset["image"] == tileset_path:
             if not "tiles" in tileset:
                 break
             for tile in tileset["tiles"]:
@@ -275,20 +275,20 @@ for m in map_parts:
     first_map = False
 
 # apply hidden tiles
-empty_tile_gid = get_tile_gid("empty", 0)
-empty_collides_tile_gid = get_tile_gid("empty", 1)
+empty_tile_gid = get_tile_gid("src/tiles/empty.png", 0)
+empty_collides_tile_gid = get_tile_gid("src/tiles/empty.png", 1)
 tileset_map = {}
 for tileset in merge_config["hidden_tiles"]:
-    name = tileset["tileset"]
+    path = tileset["tileset"]
     ids = tileset["ids"]
     for i in ids:
-        properties = get_tile_properties(name, i)
+        properties = get_tile_properties(path, i)
         collides = False
         for p in properties:
             if p["name"] == "collides":
                 if p["value"]:
                     collides = True
-        tileset_map[get_tile_gid(name, i)] = empty_collides_tile_gid if collides else empty_tile_gid
+        tileset_map[get_tile_gid(path, i)] = empty_collides_tile_gid if collides else empty_tile_gid
 
 for layer in merged_map["layers"]:
     if not layer["type"] == "tilelayer":
