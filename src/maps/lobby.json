@@ -17,9 +17,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"exitUrl",
+                 "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"<lobby>\/erfas-spaces-north.json"
+                 "value":"https:\/\/lobby.maps.at.rc3.world\/maps\/erfas-spaces-north.json#start_gaffa-overflow"
                 }],
          "type":"tilelayer",
          "visible":true,
