@@ -374,7 +374,7 @@
                 {
                  "name":"playAudio",
                  "type":"string",
-                 "value":"..\/audio\/adventure\/datenschuz1.mp3"
+                 "value":"..\/audio\/adventure\/datenschutz1.mp3"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -518,7 +518,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"http:\/\/www.b-kainka.de\/bastel0.htm"
+                 "value":"https:\/\/www.b-kainka.de\/bastel0.htm"
                 }],
          "type":"tilelayer",
          "visible":true,
