@@ -93,6 +93,12 @@
          "id":18,
          "name":"Inter_lob_disco_01",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"playAudio",
+                 "type":"string",
+                 "value":"stream:rc3lounge"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":55,
