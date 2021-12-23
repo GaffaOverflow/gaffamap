@@ -1,6 +1,6 @@
 name: update rc3 tiles
 on:
-    - cron: '*/120 * * * *'
+    - cron: '0 */2 * * *'
 jobs:
   update-tiles:
     runs-on: ubuntu-latest
