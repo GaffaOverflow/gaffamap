@@ -12,7 +12,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"{minecraft1.json}"
+                 "value":"minecraft1.json"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -30,7 +30,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"{minecraft1.json}"
+                 "value":"minecraft1.json"
                 }],
          "type":"tilelayer",
          "visible":true,
