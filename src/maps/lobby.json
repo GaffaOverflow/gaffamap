@@ -482,6 +482,15 @@
          "tileheight":32,
          "tiles":[
                 {
+                 "id":0,
+                 "properties":[
+                        {
+                         "name":"tilesetCopyright",
+                         "type":"string",
+                         "value":"CC BY-NC-SA"
+                        }]
+                }, 
+                {
                  "animation":[
                         {
                          "duration":200,

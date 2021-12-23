@@ -173,7 +173,7 @@
  "nextobjectid":1,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.2",
+ "tiledversion":"1.7.2",
  "tileheight":32,
  "tilesets":[
         {
@@ -217,6 +217,12 @@
          "imagewidth":288,
          "margin":0,
          "name":"objects_gaffa",
+         "properties":[
+                {
+                 "name":"tilesetCopyright",
+                 "type":"string",
+                 "value":"CC BY-NC-SA"
+                }],
          "spacing":0,
          "tilecount":81,
          "tileheight":32,
@@ -267,6 +273,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":1.4,
+ "version":"1.6",
  "width":70
 }
