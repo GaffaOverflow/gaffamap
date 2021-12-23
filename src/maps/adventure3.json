@@ -475,7 +475,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":" https:\/\/www.elektronik-labor.de\/Projekte\/Padauk1.html"
+                 "value":"https:\/\/www.elektronik-labor.de\/Projekte\/Padauk1.html"
                 }],
          "type":"tilelayer",
          "visible":true,
