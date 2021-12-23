@@ -1,5 +1,6 @@
 name: update rc3 tiles
 on:
+  schedule:
     - cron: '0 */2 * * *'
 jobs:
   update-tiles:
