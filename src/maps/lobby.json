@@ -26,6 +26,12 @@
          "id":23,
          "name":"Inter_lob_audio_01",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"playAudio",
+                 "type":"string",
+                 "value":"https:\/\/cdn.c3voc.de\/abchillgleis_native.mp3"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":55,
@@ -277,12 +283,6 @@
  "nextlayerid":24,
  "nextobjectid":1,
  "orientation":"orthogonal",
- "properties":[
-        {
-         "name":"playAudio",
-         "type":"string",
-         "value":"https:\/\/cdn.c3voc.de\/abchillgleis_native.mp3"
-        }],
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
  "tileheight":32,
