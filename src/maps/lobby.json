@@ -646,6 +646,12 @@
          "imagewidth":320,
          "margin":0,
          "name":"gaffa_lobby_textures_No2",
+         "properties":[
+                {
+                 "name":"tilesetCopyright",
+                 "type":"string",
+                 "value":"CC BY-NC-SA"
+                }],
          "spacing":0,
          "tilecount":100,
          "tileheight":32,
