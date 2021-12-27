@@ -281,7 +281,7 @@
         {
          "name":"playAudio",
          "type":"string",
-         "value":"stream:abchillgleis"
+         "value":"https:\/\/cdn.c3voc.de\/abchillgleis_native.mp3"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
