@@ -12,7 +12,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"<world:\/\/lobby\/rest-of-2020.json#start_gaffa-overflow>"
+                 "value":"world:\/\/lobby\/rest-of-2020.json#start_gaffa-overflow"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -30,7 +30,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"<world:\/\/lobby\/rest-of-2020.json#start_gaffa-overflow>"
+                 "value":"world:\/\/lobby\/rest-of-2020.json#start_gaffa-overflow"
                 }],
          "type":"tilelayer",
          "visible":true,
