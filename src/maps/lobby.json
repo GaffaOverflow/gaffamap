@@ -314,6 +314,12 @@
          "imagewidth":288,
          "margin":0,
          "name":"objects_gaffa",
+         "properties":[
+                {
+                 "name":"tilesetCopyright",
+                 "type":"string",
+                 "value":"CC BY-NC-SA"
+                }],
          "spacing":0,
          "tilecount":81,
          "tileheight":32,
