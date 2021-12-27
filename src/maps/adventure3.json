@@ -859,6 +859,12 @@
          "imagewidth":32,
          "margin":0,
          "name":"03_mate_crates_2",
+         "properties":[
+                {
+                 "name":"tilesetCopyright",
+                 "type":"string",
+                 "value":"CC0"
+                }],
          "spacing":0,
          "tilecount":3,
          "tileheight":32,
