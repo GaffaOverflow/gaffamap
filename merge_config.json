@@ -35,6 +35,12 @@
           "spacing": 0,
           "tilecount": 2,
           "tileheight": 32,
+          "properties":[
+          {
+              "name":"tilesetCopyright",
+              "type":"string",
+              "value":"CC0"
+          }],
           "tiles": [
             {
               "id": 1,
@@ -43,11 +49,6 @@
                   "name": "collides",
                   "type": "bool",
                   "value": true
-                },
-                {
-                  "name":"tilesetCopyright",
-                  "type":"string",
-                  "value":"CC0"
                 }
               ]
             }
@@ -66,6 +67,12 @@
          "spacing":0,
          "tilecount":81,
          "tileheight":32,
+         "properties":[
+         {
+             "name":"tilesetCopyright",
+             "type":"string",
+             "value":"CC BY-NC-SA"
+         }],
          "tiles":[
                 {
                  "id":0,
@@ -74,11 +81,6 @@
                          "name":"collision",
                          "type":"bool",
                          "value":true
-                        },
-                        {
-                            "name":"tilesetCopyright",
-                            "type":"string",
-                            "value":"CC BY-NC-SA"
                         }
                  ]
                 }, 
