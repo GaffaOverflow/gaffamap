@@ -43,6 +43,11 @@
                   "name": "collides",
                   "type": "bool",
                   "value": true
+                },
+                {
+                  "name":"tilesetCopyright",
+                  "type":"string",
+                  "value":"CC0"
                 }
               ]
             }
@@ -69,7 +74,13 @@
                          "name":"collision",
                          "type":"bool",
                          "value":true
-                        }]
+                        },
+                        {
+                            "name":"tilesetCopyright",
+                            "type":"string",
+                            "value":"CC BY-NC-SA"
+                        }
+                 ]
                 }, 
                 {
                  "id":8,
