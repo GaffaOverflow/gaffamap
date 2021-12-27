@@ -848,6 +848,12 @@
          "imagewidth":512,
          "margin":0,
          "name":"misc",
+         "properties":[
+                {
+                 "name":"tilesetCopyright",
+                 "type":"string",
+                 "value":"CC0"
+                }],
          "spacing":0,
          "tilecount":1024,
          "tileheight":32,
