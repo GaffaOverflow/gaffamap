@@ -386,6 +386,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/haxko.space"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -404,6 +409,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/westwoodlabs.de"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -422,6 +432,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/chaostreff-osnabrueck.de\/"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -440,6 +455,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/haxko.space\/themen\/3d-druck\/"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -458,6 +478,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/haxko.space\/themen\/datenschutz\/"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -476,6 +501,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/www.elektronik-labor.de\/Projekte\/Padauk1.html"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -494,6 +524,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/www.elektronik-labor.de\/Labortagebuch\/Labortagebuch.htm"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -512,6 +547,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/www.b-kainka.de\/bastel0.htm"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,

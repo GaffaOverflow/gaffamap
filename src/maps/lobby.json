@@ -109,6 +109,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/pads.ccc.de\/rc3pizzapad"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -127,6 +132,11 @@
                  "name":"jitsiRoom",
                  "type":"string",
                  "value":"Main Room"
+                }, 
+                {
+                 "name":"jitsiTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
