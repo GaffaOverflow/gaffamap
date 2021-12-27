@@ -156,6 +156,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/haxko.space\/projekte\/lightpainting\/"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -174,6 +179,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/random-redirect.de\/"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -192,6 +202,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/thesprawl.city\/showcase\/"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -210,6 +225,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/www.youtube.com\/embed\/HIMUTGU60dU"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -228,6 +248,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/haxko.space\/projekte\/smd-led-practice-kit-eule\/"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -246,6 +271,11 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/cyberto.de\/covid-air-filter.html"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
                 }],
          "type":"tilelayer",
          "visible":true,
