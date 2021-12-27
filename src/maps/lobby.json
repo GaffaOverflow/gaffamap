@@ -447,6 +447,12 @@
          "imagewidth":32,
          "margin":0,
          "name":"64_tischdokumente_1",
+         "properties":[
+                {
+                 "name":"tilesetCopyright",
+                 "type":"string",
+                 "value":"CC0"
+                }],
          "spacing":0,
          "tilecount":2,
          "tileheight":32,
