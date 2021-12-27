@@ -503,7 +503,7 @@
          "imageheight":32,
          "imagewidth":288,
          "margin":0,
-         "name":"mapUtilities",
+         "name":"cert_mapUtilities",
          "properties":[
                 {
                  "name":"tilesetCopyright",
