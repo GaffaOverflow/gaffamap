@@ -295,6 +295,12 @@
          "imagewidth":96,
          "margin":0,
          "name":"lcd",
+         "properties":[
+         {
+             "name":"tilesetCopyright",
+             "type":"string",
+             "value":"CC BY-NC-SA"
+         }],
          "spacing":0,
          "tilecount":9,
          "tileheight":32,
